@@ -1,0 +1,218 @@
+/* ROOT */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  height: 100%;
+}
+/* MAIN CONTENT */
+._main {
+  margin: 0 auto;
+  min-width: 978px;
+  max-width: 1680px;
+  padding: 8px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #404040, #bd62ab);
+}
+/* ROW MAIN */
+._8rowmain {
+  display: block;
+  width: 100%;
+}
+/* CONTENT 1 */
+._1rowcontent {
+  border-top: 1px solid #eaeaea;
+  height: 100%;
+  /* background-color: #5577d9; */
+  background: linear-gradient(to right, #1490fd, #bd62ab);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+/* ROW HEADING */
+._1rowcontent ._1rowheading {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+._1rowcontent ._1rowheading ._1rowsubheading {
+  font-size: 14px;
+  color: #f4f7fd;
+  font-weight: 400;
+}
+._1rowcontent ._1rowheading ._1rowheadingTitle {
+  font-size: 22px;
+  line-height: 32px;
+  display: inline-block;
+  font-weight: 500;
+  color: #f4f7fd;
+}
+/* VIEW ALL LINK */
+._1rowcontent ._1rowheading ._rowViewBtn {
+  float: right;
+}
+._ViewBtnBg {
+  background: #3b5998;
+  color: #f4f7fd;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: super;
+  cursor: pointer;
+}
+a,
+img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+._1rowCardOverflow {
+  overflow: hidden;
+}
+/* ROW CARD 1 */
+._1rowCardlayout {
+  position: relative;
+  width: 100%;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex: none; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: none; /* OLD - Firefox 19- */
+  -webkit-flex: none; /* Chrome */
+  -ms-flex: none; /* IE 10 */
+  flex: none; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex-direction: row; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex-direction: row; /* OLD - Firefox 19- */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+._1rowCardlayout ._1rowCardGroup,
+._1rowCardlayout ._1rowCardList {
+  -webkit-box-flex: none; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: none; /* OLD - Firefox 19- */
+  -webkit-flex: none; /* Chrome */
+  -ms-flex: none; /* IE 10 */
+  flex: none; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+._1rowCardlayout ._1rowCardGroup {
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 64px;
+  margin-bottom: -64px;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+._1rowCardlayout ._1rowCardGroup,
+._1rowCardlayout ._1rowCardList {
+  -webkit-box-flex: none; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: none; /* OLD - Firefox 19- */
+  -webkit-flex: none; /* Chrome */
+  -ms-flex: none; /* IE 10 */
+  flex: none; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+._1rowCardlayout ._1rowCardList ._1rowCardItems,
+._1rowCardlayout ._1rowCardList ._1rowCardItemList {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+._1rowCardlayout ._1rowCardList ._1rowCardItemList {
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex-direction: row; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex-direction: row; /* OLD - Firefox 19- */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* Product List Description Like Name Price */
+._1rowCardlayout ._1rowCardList ._1rowCardItems {
+  width: 195px;
+  background-color: #fafafa;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 100px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-flex-direction: column; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex-direction: column; /* OLD - Firefox 19- */
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+._1rowCardlayout ._1rowCardList ._1rowCardItems,
+._1rowCardlayout ._1rowCardList ._1rowCardItemList {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+._1rowCItemsL {
+  padding: 25px 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-height: 366px;
+  text-align: center;
+}
+/* IMAGE BOX */
+.img_out_Box {
+  height: 150px;
+}
+/* my custom to set all images  */
+._1row_list_img {
+  width: 146px;
+  height: 144px;
+}
+._img_Box {
+  height: 150px;
+  width: 150px;
+}
+/* Important */
+._1rowCItemsL ._1row_list_imgDS,
+._1rowCItemsL ._1row_list_imgD {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+._1rowCItemsL ._1row_list_imgD {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+/* Important */
+._1rowCItemsL ._1row_list_imgDS {
+  color: #388e3c;
+  padding-top: 8px;
+}
+._1rowCItemsL ._1row_list_Price {
+  opacity: 0.6;
+  padding-top: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+._1rowCItemsL ._1row_list_Rate {
+  font-size: 13px;
+  font-size: 12px\9;
+}
